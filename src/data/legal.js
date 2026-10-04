@@ -1,0 +1,18 @@
+// Contenido de "Trámites legales". Copiado de tu versión original: revisa montos, plazos y versiones antes de publicar.
+export const ESTADOS = { ob: "Obligatorio", caso: "Según tu caso", no: "No necesario" };
+
+export const LEGAL = [
+  { s: "ob", t: "Inscripción en Hacienda (RUT / TRIBU-CR)", d: "Toda actividad lucrativa debe inscribirse como contribuyente. Se hace dentro de los 10 días siguientes a iniciar.", w: "TRIBU-CR, Ministerio de Hacienda", doc: "Cédula, correo activo, teléfono, actividad económica y régimen elegido." },
+  { s: "ob", t: "Inscripción en la CCSS", d: "Como independiente si trabajas solo, o como patrono si tienes personal. Debes estar al día.", w: "CCSS (en línea o sucursal)", doc: "Cédula, datos de tu actividad y planilla si tienes empleados." },
+  { s: "ob", t: "Declaraciones e impuestos", d: "Renta anual (D-101 en régimen tradicional, D-105 en simplificado) e IVA mensual (D-104) si estás en el régimen tradicional.", w: "TRIBU-CR", doc: "Registro de ventas y compras con sus comprobantes." },
+  { s: "ob", t: "Factura electrónica (régimen tradicional)", d: "Obligatoria en cada venta con la versión 4.4 vigente desde setiembre de 2025.", w: "Sistema de Hacienda o un proveedor autorizado", doc: "Cuenta en TRIBU-CR y llave criptográfica." },
+  { s: "caso", t: "Póliza de Riesgos del Trabajo (INS)", d: "Si contratas personas, debes asegurarlas.", w: "INS", doc: "Cédula y planilla de salarios." },
+  { s: "caso", t: "Uso de suelo", d: "Constancia de que tu local puede usarse para esa actividad. Es el primer paso antes del permiso sanitario y la patente.", w: "Municipalidad de tu cantón", doc: "Ubicación o plano del local, cédula y personería si es sociedad." },
+  { s: "caso", t: "Permiso Sanitario de Funcionamiento", d: "Para comercios, industrias y servicios con establecimiento. Hay tarifa reducida para microempresas.", w: "Ministerio de Salud (Área Rectora de tu cantón)", doc: "Uso de suelo, formulario de solicitud y cédula." },
+  { s: "caso", t: "Patente municipal", d: "Licencia para operar en tu cantón. Suele pedir permiso sanitario vigente y CCSS al día. El porcentaje de pago varía por municipalidad.", w: "Municipalidad de tu cantón", doc: "Permiso sanitario, constancia CCSS, uso de suelo y cédula." },
+  { s: "caso", t: "Permisos según tu actividad", d: "Licores, turismo (ICT), alimentos de origen animal (Senasa), música (ACAM) o construcción (CFIA).", w: "Cada institución", doc: "Varían según la actividad." },
+  { s: "no", t: "Crear una sociedad (S.A. o S.R.L.)", d: "No es necesaria para empezar: puedes operar como persona física. Sirve para separar tu patrimonio y tener socios. Si la creas, necesitas firma digital, escritura ante notario y declaración de beneficiarios finales (D-140).", w: "Registro Nacional y notario", doc: "Cédulas de los socios y escritura." },
+  { s: "no", t: "Factura electrónica en el régimen simplificado", d: "Si calificas para el régimen simplificado, emitirla es voluntaria. Aplica a ciertas actividades y compras anuales de hasta ₡85 969 200 (2026). Sí debes respaldar tus compras.", w: "Hacienda", doc: "Registro de compras con comprobantes." },
+  { s: "no", t: "Vender algo personal de forma ocasional", d: "Vender tu carro o tus cosas de vez en cuando no te obliga a inscribirte ni a facturar. Si lo haces con habitualidad, ya es actividad lucrativa." },
+  { s: "no", t: "Registro PYME del MEIC", d: "Es voluntario y gratuito. Pide cumplir 2 de 3 requisitos (por ejemplo Hacienda, CCSS o póliza del INS) y abre acceso a programas de apoyo.", w: "MEIC, plataforma SIEC", doc: "Constancias de los requisitos que cumplas." }
+];

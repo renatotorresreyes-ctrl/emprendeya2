@@ -1,0 +1,23 @@
+{
+  // IMPORTANTE: este nombre debe ser IGUAL al "Project name" que pongas en el panel de Cloudflare.
+  "name": "emprende-ya",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-09-01",
+
+  // La página compilada (npm run build la deja en dist).
+  // run_worker_first: solo /api/* pasa por el código; el resto se sirve directo (con public/_headers aplicado).
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+
+  // Llama 3.1 gratis dentro de Cloudflare (Workers AI). No necesita claves.
+  "ai": { "binding": "AI" }
+
+  // Límite de uso (opcional): crea un KV con `npx wrangler kv namespace create RATE_KV`,
+  // copia el id que te muestra y quita los // de las 3 líneas siguientes (y agrega una coma arriba).
+  // , "kv_namespaces": [
+  //   { "binding": "RATE_KV", "id": "PEGA_AQUI_EL_ID" }
+  // ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "emprende-ya",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cf:dev": "npm run build && npx wrangler pages dev dist",
+    "plantillas": "python3 scripts/make_templates.py"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11",
+    "wrangler": "^4.147.0"
+  }
+}
